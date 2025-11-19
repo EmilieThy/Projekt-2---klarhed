@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Kontakt os</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poller+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+<header role="banner">
+    <nav class="header-nav" role="navigation" aria-label="Hovedmenu">
+
+        <div class="burger-menu" id="main-menu">
+            <a href="index.html"><i class="material-icons">home</i>Forside</a>
+            <a href="mere-om-adhd.html"><i class="material-icons">info</i>Mere om ADHD</a>
+            <a href="find-behandler.html"><i class="material-icons">search</i>Find behandler</a>
+            <a href="kontakt-os.html" aria-current="page"><i class="material-icons">contact_mail</i>Kontakt os</a>
+        </div>
+
+        <!-- GJORT TIL KNAP FOR TILGÆNGELIGHED, MEN INGEN VISUEL ÆNDRING -->
+        <button class="ham-menu" aria-controls="main-menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <!-- Skjult rigtig H1 -->
+        <h1 class="visually-hidden">Kontakt os</h1>
+
+        <!-- Synlig visuelt H2 -->
+        <h2><a href="index.html" class="navn-header">Klarhed</a></h2>
+
+        <div class="logo-header">
+            <img src="Img/Logo.png" alt="Klarhed logo">
+        </div>
+
+    </nav>
+</header>
+
+<main role="main">
+
+    <div class="kontakt-os-tekst">
+        <h2>Om os</h2>
+
+        <p>Denne hjemmeside er lavet af to unge mennesker på henholdsvis 20 og 21 år.</p>
+        <p>Vi lever begge med ADHD, og ønsker blot at dele ud af vores personlige og faglige viden.</p>
+        <p>Har du yderligere spørgsmål, er du velkommen til at kontakte os på:</p>
+
+        <div class="kontakt-os-info">
+            <a href="tel:11223344" aria-label="Ring til 11223344">Telefon: 11223344</a>
+            <a href="mailto:kontakt@klarhed.dk" aria-label="Send email til kontakt@klarhed.dk">Email: kontakt@klarhed.dk</a>
+        </div>
+
+        <p>Du kan også indsende din henvendelse via kontaktformularen:</p>
+    </div>
+
+    <div class="kontakt-container">
+        <form action="action_page.php" class="kontakt-form" aria-label="Kontaktformular">
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="fname">Fornavn</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Fornavn">
+                </div>
+
+                <div class="form-group">
+                    <label for="lname">Efternavn</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Efternavn">
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="phone">Telefonnummer</label>
+                    <input type="text" id="phone" name="phone" placeholder="Telefonnummer">
+                </div>
+
+                <div class="form-group">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" name="mail" placeholder="Email">
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Henvendelse...</label>
+                <textarea id="subject" name="subject" placeholder="Skriv her..." style="height:200px"></textarea>
+            </div>
+
+            <button type="submit" class="send-knap" aria-label="Send besked">
+                Send <span>&#x2192;</span>
+            </button>
+
+        </form>
+    </div>
+
+    <a href="#" class="back-top" aria-label="Tilbage til toppen">
+        <span class="material-icons">arrow_upward</span>
+    </a>
+
+</main>
+
+<footer role="contentinfo">
+  <table>
+    <tr>
+      <td><a href="index.html" class="navn-forside">Klarhed</a></td>
+    </tr>
+
+    <tr>
+      <td><div class="logo-footer"><img src="Img/Logo.png" alt="Klarhed logo"></div></td>
+
+      <td><div class="links-footer"><a href="find-behandler.html">Find behandler</a></div></td>
+
+      <td><div class="links-footer"><a href="kontakt-os.html" aria-current="page">Kontakt os</a></div></td>
+
+      <td><div class="links-footer"><a href="https://adhd.dk/" target="_blank" rel="noopener noreferrer" title="Åbn ADHD-foreningen i ny fane">ADHD foreningen</a></div></td>
+    </tr>
+  </table>
+</footer>
+
+</body>
+</html>
