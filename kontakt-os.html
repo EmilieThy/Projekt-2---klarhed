@@ -17,29 +17,30 @@
 
 <body>
 
-<header role="banner">
-    <nav class="header-nav" role="navigation" aria-label="Hovedmenu">
+<header>
+    <nav class="header-nav">
 
-        <div class="burger-menu" id="main-menu">
+        <div class="burger-menu">
             <a href="index.html"><i class="material-icons">home</i>Forside</a>
             <a href="mere-om-adhd.html"><i class="material-icons">info</i>Mere om ADHD</a>
             <a href="find-behandler.html"><i class="material-icons">search</i>Find behandler</a>
-            <a href="kontakt-os.html" aria-current="page"><i class="material-icons">contact_mail</i>Kontakt os</a>
+            <a href="kontakt-os.html"><i class="material-icons">contact_mail</i>Kontakt os</a>
         </div>
 
-        <!-- GJORT TIL KNAP FOR TILGÆNGELIGHED, MEN INGEN VISUEL ÆNDRING -->
-        <button class="ham-menu" aria-controls="main-menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </button>
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-        <!-- Skjult rigtig H1 -->
-        <h1 class="visually-hidden">Kontakt os</h1>
+        <!-- ⭐ Dette er din skjulte H1 (tilgængelig, men usynlig) -->
+        <h1 class="visually-hidden">Klarhed – ADHD informationsside</h1>
 
-        <!-- Synlig visuelt H2 -->
+        <!-- Synlig overskrift (fremstår visuelt som H1, men er H2 for SEO struktur) -->
         <h2><a href="index.html" class="navn-header">Klarhed</a></h2>
 
         <div class="logo-header">
-            <img src="Img/Logo.png" alt="Klarhed logo">
+            <img src="Img/Logo.png" alt="Logo">
         </div>
 
     </nav>

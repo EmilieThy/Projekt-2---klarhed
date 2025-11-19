@@ -78,6 +78,12 @@ header h2 {
 }
 .burger-menu.active {
     left: 0;
+    background: none;
+    border: none;
+}
+
+.ham-menu:focus {
+    outline: none;
 }
 
 body.menu-open {
@@ -111,6 +117,10 @@ body.menu-open {
     margin-right: auto;
     position: relative;
     z-index: 3000;
+    background: none;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 .ham-menu span {
     height: 5px;
