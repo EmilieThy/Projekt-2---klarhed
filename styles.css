@@ -78,12 +78,6 @@ header h2 {
 }
 .burger-menu.active {
     left: 0;
-    background: none;
-    border: none;
-}
-
-.ham-menu:focus {
-    outline: none;
 }
 
 body.menu-open {
